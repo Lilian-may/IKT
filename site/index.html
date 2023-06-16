@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Гашиш</title>
+		
+		<style>
+		.test_class {  
+    			position: absolute;  
+    			top: 20;  
+    			left: 20;  
+    			display: block;  
+    			width: 100%;  
+    			height: 100%;  
+    			text-decoration: none;  
+    			z-index: 1;  
+		}
+		
+		.non_class {
+			text-decoration: none;
+		}
+		
+		body {
+			overflow: hidden;
+			padding: 0;
+			margin: 0;
+		}
+
+		.bear {
+			background-image: url(https://rare-gallery.com/uploads/posts/592091-1920x1080-420-cannabis.jpg);
+			background-size: cover;
+			width: 192px;
+			height: 108px;
+			position: absolute;
+			top: 0;
+			left: -192px;
+			transition: 10s all;
+		}
+
+		.bear_vis {
+			animation: bear-animation 5s linear;
+		}
+
+		@keyframes bear-animation {
+			0% {
+				transform: translateX(0);
+			}
+			40% {
+				transform: translateX(192px);
+			}
+			70% {
+				transform: translateX(192px);
+			}
+			100% {
+				transform: translateX(0);
+			}
+		}
+		</style>
+		
+	</head>
+
+	<body bgcolor="#000000" background="./media/background.jpg">
+	
+
+
+		<h1>
+			<a href="./media/nigg.jpg" class="non_class">
+				<font color="red">
+					<strike><i><bold>NEГP</bold></strike></i>
+				</font>
+			</a>
+		</h1>
+
+		<figure>
+			<audio
+			controls
+			autoplay
+			muted
+			loop
+			src="./media/smoke_sound.mp3">
+				<a class="play" data-audio="./media/smoke_sound.mp3" title="Слушать"><img loading="lazy" src="//cover.lightaudio.ru/00304a5156ae7066424eaf6969b5977e7ebe6999528b588ba1b7466e9bbfaf6e5676ab754885a76869874e764e458f5a4056558966a542719e4a616e768e91b860f25dfcecb44d8cc2a4d2e4d2b21d23534d3bdce2b2.jpg?size=68x68&amp;quality=96&amp;sign=2e9e8b0774bb994664c49baf9202acb3&amp;c_uniq_tag=eFDioHxhdwVJNn7yGr6hYX6FJghS4n7fu660FDLkLPo&amp;type=audio" alt="Snoop Dogg"> </a>
+			<source src="./media/smoke_sound.mp3" type="audio/mpeg">
+			</audio>
+		</figure>
+
+		
+		<a href="./media/snoop_dog.jpg" class="test_class"></a>
+		
+		<div class="bear"></div>
+		
+		<script>
+			window.addEventListener('load', function() {
+				var bear = document.querySelector(".bear");
+				bear.classList.add("bear_vis");
+			});
+		</script>
+
+	</body>
+
+
+</html>
